@@ -4,19 +4,23 @@ fun main() {
     val gameTitle = "GTA VI"
     val price = 750_000
 
+    val userNote: String? = null
+
     val discount = calculateDiscount(price)
     val finalPrice = price - discount
 
     printReceipt(
         title = gameTitle,
-        finalPrice = finalPrice
+        finalPrice = finalPrice,
+        userNote = userNote
     )
 }
 
 fun calculateDiscount(price: Int): Int =
     if (price > 500_000) (price * 20) / 100 else (price * 10) / 100
 
-fun printReceipt(title: String, finalPrice: Int) {
+fun printReceipt(title: String, finalPrice: Int, userNote: String?) {
     println("Judul      : $title")
     println("Harga Akhir: Rp $finalPrice")
+    println("Catatan    : ${userNote ?: "Tidak ada catatan"}")
 }
