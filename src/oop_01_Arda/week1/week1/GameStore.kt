@@ -11,6 +11,7 @@ fun main() {
 
     printReceipt(
         title = gameTitle,
+        originalPrice = price,
         finalPrice = finalPrice,
         userNote = userNote
     )
@@ -19,8 +20,9 @@ fun main() {
 fun calculateDiscount(price: Int): Int =
     if (price > 500_000) (price * 20) / 100 else (price * 10) / 100
 
-fun printReceipt(title: String, finalPrice: Int, userNote: String?) {
+fun printReceipt(title: String, originalPrice: Int, finalPrice: Int, userNote: String?) {
     println("Judul      : $title")
+    println("Harga Asli : Rp $originalPrice")
     println("Harga Akhir: Rp $finalPrice")
     println("Catatan    : ${userNote ?: "Tidak ada catatan"}")
 }
