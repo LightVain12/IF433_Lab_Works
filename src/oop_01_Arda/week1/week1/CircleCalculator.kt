@@ -1,6 +1,6 @@
 package oop_01_Arda.week1.week1
 
-fun main(args: Array<String>) {
+fun main() {
     val radius = 7.0
     val pi = 3.14
 
