@@ -5,6 +5,8 @@ class Student(
     val nim: String,
     var major: String
 ) {
+    constructor(name: String, nim: String) : this(name, nim, "Non-Matriculated")
+
     init {
         if (nim.length != 11) {
             println("WARNING: NIM harus 11 digit! Data yang dimasukkan tidak valid.")
