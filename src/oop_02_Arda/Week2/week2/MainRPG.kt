@@ -1,5 +1,6 @@
 package oop_02_Arda.Week2.week2
 
+
 import java.util.Scanner
 
 fun main() {
