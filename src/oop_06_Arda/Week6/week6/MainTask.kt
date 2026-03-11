@@ -5,5 +5,15 @@ fun main() {
     val speaker = SmartSpeaker(id = "S01", name = "Google Nest Dapur")
     val cctv = SmartCCTV(id = "C01", name = "Ezviz Garasi")
 
-    // (Hub belum dijalankan di checkpoint ini)
+    // --- TAMBAHAN UNTUK CHECKPOINT 20 ---
+    val hub = SmartHomeHub()
+
+    println("=== INISIALISASI HUB ===")
+    hub.addDevice(lamp)
+    hub.addDevice(speaker)
+    hub.addDevice(cctv)
+
+    // Testing Hub Automation
+    hub.activateSecurityMode()
+    hub.turnOffAllSwitches()
 }
