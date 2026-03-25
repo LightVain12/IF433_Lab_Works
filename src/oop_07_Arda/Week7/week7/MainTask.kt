@@ -12,3 +12,13 @@ fun main() {
     println("Senjata Awal: ${starterWeapon.item.name}, Damage: ${starterWeapon.item.damage}, Durability: ${starterWeapon.durability}")
 
     println("\n=== TESTING DATA CLASS COPY & SEALED EVENT ===")
+
+    // Menggunakan copy() untuk upgrade
+    val upgradedItem = starterWeapon.item.copy(damage = 25, name = "Pedang Kayu Tajam")
+
+    // Simulasi Event Berurutan
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+    processEvent(BattleState.LootDropped(upgradedItem))
+    processEvent(BattleState.GameOver("Terkena jebakan racun"))
+}
