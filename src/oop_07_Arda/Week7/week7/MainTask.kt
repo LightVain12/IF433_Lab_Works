@@ -4,3 +4,5 @@ fun main() {
     println("=== TESTING GAME MANAGER ===")
     GameManager.startGame()
     GameManager.startGame()
+
+    println("\n=== TESTING FACTORY & ENUM ===")
