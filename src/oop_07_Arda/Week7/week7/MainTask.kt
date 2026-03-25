@@ -6,3 +6,9 @@ fun main() {
     GameManager.startGame()
 
     println("\n=== TESTING FACTORY & ENUM ===")
+
+    println("Drop Chance Legendary: ${ItemRarity.LEGENDARY.dropChance}%")
+    val starterWeapon = Weapon.forgeStarterSword()
+    println("Senjata Awal: ${starterWeapon.item.name}, Damage: ${starterWeapon.item.damage}, Durability: ${starterWeapon.durability}")
+
+    println("\n=== TESTING DATA CLASS COPY & SEALED EVENT ===")
