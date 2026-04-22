@@ -29,4 +29,10 @@ fun main() {
     println("\n[ Top Performers ]")
     topPerformersString.forEach { println(it) }
 
+    println("\n[ Worst Performers ]")
+    worstPerformersString.forEach { println(it) }
+
+    println("\n[ Unique Pairs Traded ]")
+    println(uniquePairs)
+
 }
