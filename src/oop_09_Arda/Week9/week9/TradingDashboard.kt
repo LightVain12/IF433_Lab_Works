@@ -3,7 +3,6 @@ package oop_09_Arda.Week9.week9
 fun main() {
     println("=== CRYPTO TRADING DASHBOARD ===")
 
-    // --- CHECKPOINT 11: Populasi Data ---
     val tradeHistory = listOf(
         TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
         TradeLog("ETHUSDT", "SHORT", 10, -5.2, "CLOSED"),
@@ -13,6 +12,6 @@ fun main() {
         TradeLog("BNBUSDT", "SHORT", 15, 0.0, "OPEN")
     )
 
-    // --- CHECKPOINT 12: Filter CLOSED ---
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
+    val winningTrades = closedTrades.filter { it.roe > 0 }
 }
