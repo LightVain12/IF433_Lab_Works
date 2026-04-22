@@ -6,11 +6,11 @@ fun main() {
     // Immutable List (Read-Only)
     val readOnlyList = listOf("Bitcoin", "Ethereum", "Solana")
     println("Immutable List: $readOnlyList")
-    // readOnlyList.add("Cardano") // ERROR: Tidak bisa ditambah
+    // readOnlyList.add("Cardano") // Coba uncomment ini, pasti akan Error
 
     // Mutable List (Dinamis)
     val dynamicList = mutableListOf("Bitcoin", "Ethereum", "Solana")
-    dynamicList.add("Cardano") // BERHASIL
-    dynamicList.remove("Ethereum")
+    dynamicList.add("Cardano") // Berhasil ditambah
+    dynamicList.remove("Ethereum") // Berhasil dihapus
     println("Mutable List: $dynamicList")
 }
