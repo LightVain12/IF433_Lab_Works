@@ -1,16 +1,13 @@
 package oop_09_Arda.Week9.week9
 
 fun main() {
-    println("=== LATIHAN TERBIMBING 1: LIST & MUTABILITAS ===")
+    // --- CHECKPOINT 1: LIST ---
+    println("=== TEST LIST ===")
+    val frameworks: List<String> = listOf("Kotlin", "Java", "C++")
+    // frameworks.add("Python") // UNCOMMENT INI AKAN ERROR!
+    println("Immutable List: $frameworks")
 
-    // Immutable List (Read-Only)
-    val readOnlyList = listOf("Bitcoin", "Ethereum", "Solana")
-    println("Immutable List: $readOnlyList")
-    // readOnlyList.add("Cardano") // Coba uncomment ini, pasti akan Error
-
-    // Mutable List (Dinamis)
-    val dynamicList = mutableListOf("Bitcoin", "Ethereum", "Solana")
-    dynamicList.add("Cardano") // Berhasil ditambah
-    dynamicList.remove("Ethereum") // Berhasil dihapus
-    println("Mutable List: $dynamicList")
-}
+    val scores: MutableList<Int> = mutableListOf(85, 90)
+    scores.add(95)
+    scores[0] = 88
+    println("Mutable List: $scores")
