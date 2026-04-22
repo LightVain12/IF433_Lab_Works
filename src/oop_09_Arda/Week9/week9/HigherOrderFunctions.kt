@@ -1,7 +1,6 @@
 package oop_09_Arda.Week9.week9
 
 fun main() {
-    fun main() {
         val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8)
         println("Original Data: $numbers")
 
