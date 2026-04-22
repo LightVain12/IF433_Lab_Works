@@ -13,4 +13,6 @@ fun main() {
         TradeLog("BNBUSDT", "SHORT", 15, 0.0, "OPEN")
     )
 
-    }
+    // --- CHECKPOINT 12: Filter CLOSED ---
+    val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
+}
