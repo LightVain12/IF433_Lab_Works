@@ -19,4 +19,7 @@ fun main() {
     txRepo.add(Transaction("TX001", 0.5, "BUY"))
     txRepo.add(Transaction("TX002", 1.2, "SELL"))
 
+    txRepo.getAll().forEach {
+        println("ID: ${it.txId} | Amount: ${it.amount} | Type: ${it.type}")
+    }
 }
