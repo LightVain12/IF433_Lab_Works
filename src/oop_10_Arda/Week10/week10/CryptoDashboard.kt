@@ -13,4 +13,10 @@ fun main() {
     response.data.forEach {
         println("Coin: ${it.name} (${it.symbol}) - Price: $${it.price}")
     }
+
+    println("\n=== TRANSACTION HISTORY ===")
+    val txRepo = WalletRepository<Transaction>()
+    txRepo.add(Transaction("TX001", 0.5, "BUY"))
+    txRepo.add(Transaction("TX002", 1.2, "SELL"))
+
 }
