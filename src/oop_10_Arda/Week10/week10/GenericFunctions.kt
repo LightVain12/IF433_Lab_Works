@@ -5,6 +5,7 @@ fun <T> printList(items: List<T>) {
         print("[$item] ")
     }
     println()
-    fun <T : Number> sum(a: T, b: T): Double {
-        return a.toDouble() + b.toDouble()
+}
+fun <T : Number> sum(a: T, b: T): Double {
+    return a.toDouble() + b.toDouble()
 }
