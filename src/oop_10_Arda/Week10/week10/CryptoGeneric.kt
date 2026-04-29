@@ -6,3 +6,13 @@ interface Repository<T> {
     fun add(item: T)
     fun getAll(): List<T>
 }
+
+class WalletRepository<T> : Repository<T> {
+    private val items = mutableListOf<T>()
+
+    override fun add(item: T) {
+        items.add(item)
+    }
+
+    override fun getAll(): List<T> = items
+}
