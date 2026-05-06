@@ -32,5 +32,11 @@ fun main() {
         println("Ditemukan: ${it.diagnose()}")
     }
 
+    println("\n=== DASHBOARD SUMMARY ===")
+    with(homeDevices) {
+        println("Total perangkat terdaftar: ${this.size}")
+    }
+
+
 
 }
