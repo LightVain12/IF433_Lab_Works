@@ -1,6 +1,5 @@
 package week12
 
-//basic Exception - TryCatch
 fun pembagian(pembilang:Int, penyebut:Int) {
     try {
         val hasilBagi = pembilang / penyebut;
@@ -12,7 +11,6 @@ fun pembagian(pembilang:Int, penyebut:Int) {
     }
 }
 
-//Exception -Expression - Tipe data
 fun cek_tipe_data() {
     var angka:Int = try {
         Integer.parseInt("10");

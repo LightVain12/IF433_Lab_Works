@@ -15,7 +15,6 @@ fun main() {
     println("=== TEST TRY AS EXPRESSION ===")
     val inputString = "123A"
 
-    // try langsung mengembalikan hasil parsing, atau -1 jika gagal
     val result: Int = try {
         Integer.parseInt(inputString)
     } catch (e: NumberFormatException) {
